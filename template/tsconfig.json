@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "es2015",
+		"lib": ["dom", "es2015"],
+		"sourceMap": true,
+		"noEmitHelpers": true,
+		"importHelpers": true,
+		"strict": true,
+		"moduleResolution": "node",
+		"typeRoots": ["types"],
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true
+	},
+	"include": ["app", "types"],
+	"exclude": ["node_modules", "platforms"]
+}

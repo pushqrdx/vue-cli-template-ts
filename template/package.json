@@ -1,0 +1,48 @@
+{
+  "name": "{{ name }}",
+  "version": "{{ version }}",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "license": "{{ license }}",
+  "nativescript": {
+    "id": "{{ app_id }}",
+    "tns-ios": {
+      "version": "4.2.0"
+    },
+    "tns-android": {
+      "version": "4.2.0"
+    }
+  },
+  "dependencies": { {{#store}}
+    "vuex": "^3.0.1",{{/store}}{{#devtools}}
+    "@vue/devtools": "5.0.0-beta.3",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "nativescript-socket.io": "^0.9.0",
+    "nativescript-vue-devtools": "^1.0.0",
+    "nativescript-toast": "^1.4.6",{{/devtools}}{{#if_eq preset "SideDrawer"}}
+    "nativescript-ui-sidedrawer": "^4.3.0",{{/if_eq}}
+    "nativescript-theme-core": "^1.0.4",
+    "nativescript-vue": "^2.0.0",
+    "tns-core-modules": "^4.2.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "lazy": "1.0.11",
+    "nativescript-dev-webpack": "next",
+    "nativescript-vue-template-compiler": "^2.0.0",
+    "nativescript-worker-loader": "~0.9.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.1.1",
+    "ts-loader": "^5.2.1",
+    "terser-webpack-plugin": "^1.1.0",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.2.6",
+    "webpack": "^4.16.4",
+    "webpack-bundle-analyzer": "~2.13.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
