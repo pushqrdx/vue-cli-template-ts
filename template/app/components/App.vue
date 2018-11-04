@@ -8,13 +8,13 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
+    import { Vue, Component } from 'vue-property-decorator'
 
-@Component
-export default class Application extends Vue {
-    // Initial data can be declared as instance properties
-    msg: string = 'Hello Worlds!'
-}
+    @Component
+    export default class Application extends Vue {
+        // Initial data can be declared as instance properties
+        msg: string = 'Hello Worlds!'
+    }
 </script>
 
 <style scoped>
@@ -55,14 +55,14 @@ export default class Application extends Vue {
     </Page>
 </template>
 
-<script>
-  export default {
-    data() {
-      return {
-        msg: 'Hello World!'
-      }
+<script lang="ts">
+    import { Vue, Component } from 'vue-property-decorator'
+
+    @Component
+    export default class Application extends Vue {
+        // Initial data can be declared as instance properties
+        msg: string = 'Hello Worlds!'
     }
-  }
 </script>
 
 <style scoped>
@@ -102,14 +102,14 @@ export default class Application extends Vue {
     </Page>
 </template>
 
-<script>
-  export default {
-    data() {
-      return {
-        msg: 'Hello World!'
-      }
+<script lang="ts">
+    import { Vue, Component } from 'vue-property-decorator'
+
+    @Component
+    export default class Application extends Vue {
+        // Initial data can be declared as instance properties
+        msg: string = 'Hello Worlds!'
     }
-  }
 </script>
 
 <style scoped>
