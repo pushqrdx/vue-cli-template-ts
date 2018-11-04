@@ -8,11 +8,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Vue, Component } from 'vue-property-decorator'
 
 @Component
-export default class App extends Vue {
-    private msg: string = "Hello World!";
+export default class Application extends Vue {
+    // Initial data can be declared as instance properties
+    msg: string = 'Hello Worlds!'
 }
 </script>
 
